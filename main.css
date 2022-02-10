@@ -221,7 +221,7 @@ ul > .menu-item > a:hover::after {
     justify-content: space-around;
     text-align: center;
     position: relative;
-    z-index: -1;
+    z-index: 1;
 }
 
 #contact img {
