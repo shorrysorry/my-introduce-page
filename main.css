@@ -12,7 +12,7 @@ body {
     margin: 0;
     padding-top: 10vmin;
     font-family: 'Merriweather',
-    serif;
+        serif;
     font-size: 2vmin;
     background: var(--main-black);
     color: var(--main-white);
@@ -27,9 +27,9 @@ body {
 }
 
 #main-menu {
-   text-align: center;
-   background-color: var(--main-gray);
-   height: 10vmin;
+    text-align: center;
+    background-color: var(--main-gray);
+    height: 10vmin;
 }
 
 ul {
@@ -41,14 +41,14 @@ ul {
     text-align: center;
 }
 
-ul > .menu-item {
+ul>.menu-item {
     display: flex;
     align-items: center;
     position: relative;
-    z-index: 1;
     height: 8vmin;
 }
-ul > .menu-item > a {
+
+ul>.menu-item>a {
     width: 8vw;
     color: var(--main-white);
     text-decoration: none;
@@ -58,7 +58,7 @@ ul > .menu-item > a {
     margin: 2vmin 2vmin;
 }
 
-ul > .menu-item > a::after {
+ul>.menu-item>a::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -70,7 +70,7 @@ ul > .menu-item > a::after {
     transition: all .5s ease-out;
 }
 
-ul > .menu-item > a:hover::after {
+ul>.menu-item>a:hover::after {
     width: 80%;
 }
 
@@ -90,25 +90,7 @@ ul > .menu-item > a:hover::after {
     border-radius: 20%;
 }
 
-.title-guide1 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-.title-guide2 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-
 /* home */
-#home {
-    position: relative;
-    z-index: -1;
-}
-
 #home .home-text {
     text-align: center;
     font-size: 7vmin;
@@ -123,11 +105,6 @@ ul > .menu-item > a:hover::after {
 }
 
 /* details */
-#details {
-    position: relative;
-    z-index: -1;
-}
-
 #details > img {
     box-shadow: 8px 8px 8px;
     width: 25vw;
@@ -174,8 +151,6 @@ ul > .menu-item > a:hover::after {
 #like {
     justify-content: space-around;
     text-align: center;
-    position: relative;
-    z-index: -1;
 }
 
 #like .like-wrapper {
@@ -196,8 +171,6 @@ ul > .menu-item > a:hover::after {
 #want {
     justify-content: space-around;
     text-align: center;
-    position: relative;
-    z-index: -1;
 }
 
 #want .want-main {
@@ -220,8 +193,6 @@ ul > .menu-item > a:hover::after {
 #contact {
     justify-content: space-around;
     text-align: center;
-    position: relative;
-    z-index: 1;
 }
 
 #contact img {
