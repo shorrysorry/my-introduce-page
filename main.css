@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+
+:root {
+    --main-black: #222831;
+    --main-gray: #393e46;
+    --main-teal: #00adb5;
+    --main-white: #eeeeee;
+}
+
+/* body */
+body {
+    margin: 0;
+    padding-top: 10vmin;
+    font-family: 'Merriweather',
+    serif;
+    font-size: 2vmin;
+    background: var(--main-black);
+    color: var(--main-white);
+}
+
+/* nav */
+#nav-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#main-menu {
+   text-align: center;
+   background-color: var(--main-gray);
+   height: 10vmin;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1vmin 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+ul > .menu-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    height: 8vmin;
+}
+ul > .menu-item > a {
+    width: 8vw;
+    color: var(--main-white);
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    font-size: 2vmin;
+    margin: 2vmin 2vmin;
+}
+
+ul > .menu-item > a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: .2vw;
+    background: var(--main-teal);
+    transition: all .5s ease-out;
+}
+
+ul > .menu-item > a:hover::after {
+    width: 80%;
+}
+
+/* main */
+.main-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    height: 90vh;
+    margin-top: -10vmin;
+    padding-top: 10vmin;
+}
+
+.main-text img {
+    border: .5rem solid var(--main-gray);
+    border-radius: 20%;
+}
+
+.title-guide1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.title-guide2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* home */
+#home {
+    position: relative;
+    z-index: -1;
+}
+
+#home .home-text {
+    text-align: center;
+    font-size: 7vmin;
+    background: linear-gradient(90deg, #12c2e9, #c471ed, #f64f59);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+#home .home-name {
+    font-size: 2vmin;
+    color: var(--main-white);
+}
+
+/* details */
+#details {
+    position: relative;
+    z-index: -1;
+}
+
+#details > img {
+    box-shadow: 8px 8px 8px;
+    width: 25vw;
+    height: 25vw;
+    margin-right: 3vw;
+}
+
+#details > .myinfo {
+    border-left: 1px solid var(--main-white);
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.myinfo .info-title {
+    font-size: 2.5vmin;
+    color: #00adb5;
+}
+
+.myinfo > .prof-bar {
+    padding-left: 2px;
+    font-size: 1.5vmin;
+    background: linear-gradient(90deg, #12c2e9, #c471ed, #f64f59);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px;
+    margin-bottom: 3px;
+}
+
+.myinfo > .prof-bar[data-score="45"] {width: 45%}
+.myinfo > .prof-bar[data-score="35"] {width: 35%}
+.myinfo > .prof-bar[data-score="25"] {width: 25%}
+.myinfo > .prof-bar[data-score="15"] {width: 15%}
+
+.myinfo > .prof-bar::before {
+    content: "%";
+    float: right;
+    font-size: 1.5vmin;
+}
+.myinfo > .prof-bar::after {
+    content: attr(data-score);
+    float: right;
+}
+
+/* like */
+#like {
+    justify-content: space-around;
+    text-align: center;
+    position: relative;
+    z-index: -1;
+}
+
+#like .like-wrapper {
+    text-align: center;
+}
+
+#like img {
+    box-shadow: 4px 4px 4px;
+    width: 15vw;
+    height: 15vw;
+}
+
+#like .like-text{
+    font-size: 3vmin;
+}
+
+/* want */
+#want {
+    justify-content: space-around;
+    text-align: center;
+    position: relative;
+    z-index: -1;
+}
+
+#want .want-main {
+    width: 20vw;
+    font-size: 2vmin;
+}
+
+#want img {
+    box-shadow: 4px 4px 4px;
+    width: 15vw;
+    height: 15vw;
+}
+
+#want p {
+    height: 3vmin;
+}
+
+
+/* contact */
+#contact {
+    justify-content: space-around;
+    text-align: center;
+    position: relative;
+    z-index: -1;
+}
+
+#contact img {
+    border: 0px;
+    width: 100px;
+    height: 100px;
+}
