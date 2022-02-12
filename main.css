@@ -97,7 +97,7 @@ ul>.menu-item>a:hover::after {
     background: linear-gradient(90deg, #12c2e9, #c471ed, #f64f59);
     color: transparent;
     -webkit-background-clip: text;
-    animation: fade-in 2s;
+    animation: fadeIn 2s;
 }
 
 #home .home-name {
@@ -214,7 +214,7 @@ ul>.menu-item>a:hover::after {
     height: 100px;
 }
 
-@keyframes fade-in {
+@keyframes fadeIn {
     from{
         opacity: 0;
     }
